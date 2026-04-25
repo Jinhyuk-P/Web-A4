@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astra DB Users App</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+  <main class="shell">
+
+    <section class="panel grid">
+      <article class="card form-card">
+        <div class="card-header">
+          <h2>Registrar usuario</h2>
+        </div>
+
+        <form id="user-form" class="user-form">
+          <label>
+            Nombre
+            <input id="name" name="name" type="text" placeholder="Ana Perez" required />
+          </label>
+
+          <label>
+            Email
+            <input id="email" name="email" type="email" placeholder="ana@correo.com" required />
+          </label>
+
+          <button id="submit-button" type="submit">Guardar en Astra DB</button>
+        </form>
+
+        <p id="form-message" class="message" aria-live="polite"></p>
+      </article>
+
+      <article class="card list-card">
+        <div class="card-header">
+          <h2>Usuarios registrados</h2>
+        </div>
+
+        <div id="users-list" class="users-list"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="/static/app.js" defer></script>
+</body>
+
+</html>
